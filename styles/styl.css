@@ -1,0 +1,155 @@
+* {
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Lato", sans-serif;
+}
+/* shared styles */
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.btn-primary {
+    background-color: #E55473;
+    border-radius: 8px;
+    padding: 20px 43px;
+    border: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    transform: 0.3s ease;
+}
+.btn-primary:hover {
+    background: transparent;
+    border: 1px solid #E55473;
+    color: #E55473;
+}
+/* black opacity 100% */
+.color-1 {
+    color: rgba(39, 39, 39, 1);
+}
+/* black opacity 60% */
+.description {
+    color: rgba(39, 39, 39, 0.6);
+    line-height: 30px;
+    margin: 24px 0 32px ;
+    font-size: 1.2rem;
+}
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+/* header related styles */
+header {
+    background-color: rgba(229, 84, 115, 0.1);
+    padding: 50px 240px 0;
+}
+.banner-section {
+    display: flex;
+    gap: 97px;
+}
+.banner-content {
+    max-width: 708px;
+    width: 100%;
+    text-align: left;
+}
+.banner-header {
+    font-size: 2.8rem;
+    font-weight: 800;
+}
+/* .banner-description {
+    font-size: 1.2rem;
+    line-height: 30px;
+    margin: 32px 0;
+} */
+.banner-image img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+
+/* our flowers section related style  */
+.our-flowers {
+    margin-top: 178px;
+    text-align: center;
+}
+.flowers-box {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    align-items: center;
+}
+.flowers-card {
+    width: 464px;
+    text-align: center;
+}
+.flowers-card img {
+    margin-top: 48px;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    padding: 110px 78px 0;
+    max-width: 464px;
+    height: 538px;
+}
+#light-pink {
+    background-color: rgba(167, 33, 98, 0.15);
+}
+#light-blue {
+    background-color: rgba(5, 151, 160, 0.15);
+}
+#light-green {
+    background-color: rgba(71, 125, 17, 0.15);
+}
+.flowers-name {
+    margin-top: 32px;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+/* responsive for small device max-width 576px  */
+@media screen and (max-width: 576px) {
+    header {
+        padding: 20px;
+    }
+    .banner-section {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    .banner-content {
+        text-align: center;
+    }
+}
+
+/* resoponsive for medium device min-width 576 to max-width 992px */
+@media screen and (min-width:576px) and (max-width: 992px) {
+    header {
+        padding: 20px;
+    }
+    .banner-section {
+        flex-direction: column;
+        gap: 25px;
+        text-align: center;
+    }
+    .banner-content {
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+    /* responsive for large device min-width 992 to 1200px */
+    @media screen and (min-width: 992px) and (max-width: 1200px) {
+        header {
+        padding: 20px;
+    }
+    .banner-section {
+        gap: 25px;
+        text-align: center;
+    }
+    .banner-content {
+        margin: 0 auto;
+        text-align: center;
+    }
+    }
