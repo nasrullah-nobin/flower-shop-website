@@ -122,6 +122,69 @@ header {
     margin: 24px 0 0;
     font-size: 1.2rem;
 }
+/* deals-section-related-styles */
+.deal-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+    background-color: rgba(229, 84, 115, 0.05);
+    margin-top: 128px;
+    text-align: center;
+    gap: 186px;
+}
+/* gallery related style  */
+.gallery-section {
+    margin-top: 128px;
+    text-align: center;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 24px;
+
+}
+/* subscription related style  */
+.subscribe-section {
+    background-image: url('../Flower Asset/Rectangle\ 9.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-top: 128px;
+    text-align: center;
+    padding: 120px 285px;
+}
+.subscribe-box {
+    width: 700px;
+    padding: 22px;
+    border-radius: 8px;
+    border: none;
+}
+/* footer related style  */
+footer {
+    background-color: #111010;
+    text-align: center;
+    padding: 128px;
+    margin-top: 123px;
+}
+#pink-f {
+    color: #E55473;
+}
+#white-f {
+    color: #FFFFFF;
+}
+.footer-description {
+    line-height: 30px;
+    color: #FFFFFF;
+    font-size: 1.2rem;
+    margin: 0 auto;
+    margin-top: 24px;
+}
+.copyright-text {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 0.9rem;
+    margin-top: 32px;
+}
 
 /* responsive for small device max-width 576px  */
 @media screen and (max-width: 576px) {
@@ -130,10 +193,9 @@ header {
     }
     .banner-section,
     .flowers-box,
-    .our-services {
+    .our-services,
+    .deal-section {
         flex-direction: column;
-        gap: 20px;
-        text-align: center;
     }
     .banner-content {
         text-align: center;
@@ -148,6 +210,37 @@ header {
     .our-services {
         gap: 30px;
     }
+    .deal-section {
+        padding: 100px 50px;
+        gap: 100px;
+    }
+    .gallery-section {
+        padding: 20px;
+    }
+    .gallery {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+    .gallery img {
+        width: 100%;
+    }
+    .subscribe-section {
+    margin-top: 100px;
+    padding: 30px 50px;
+    background-size: cover;
+}
+.subscribe-box {
+    width: 300px;
+    padding: 22px;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 14px;
+}
+footer {
+    margin-top: 100px;
+    padding: 30px 20px;
+}
+
 }
 
 /* resoponsive for medium device min-width 576 to max-width 992px */
@@ -157,7 +250,8 @@ header {
     }
     .banner-section,
     .flowers-box,
-    .our-services {
+    .our-services,
+    .deal-section {
         flex-direction: column;
         gap: 25px;
         text-align: center;
@@ -169,6 +263,30 @@ header {
     .our-services {
         gap: 40px;
     }
+    .gallery-section {
+        padding: 20px;
+    }
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    .gallery img {
+        margin-left: 5px;
+        width: 95%;
+    }
+        .subscribe-section {
+    margin-top: 100px;
+    padding: 30px 50px;
+    background-size: cover;
+}
+.subscribe-box {
+    width: 300px;
+    padding: 22px;
+    border-radius: 8px;
+    border: none;
+    margin-right: 20px;
+}
+
 }
 
     /* responsive for large device min-width 992 to 1200px */
@@ -187,4 +305,30 @@ header {
     .flowers-box {
         flex-direction: column;
     }
+    .deal-section {
+        padding: 100px 50px;
+    }
+      .gallery-section {
+        padding: 20px;
+    }
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    .gallery img {
+        margin-left: 5px;
+        width: 95%;
+    }
+           .subscribe-section {
+    margin-top: 100px;
+    padding: 30px 50px;
+    background-size: cover;
+}
+.subscribe-box {
+    width: 300px;
+    padding: 22px;
+    border-radius: 8px;
+    border: none;
+    margin-right: 14px;
+}
     }
