@@ -89,6 +89,7 @@ header {
     border-top-right-radius: 100%;
     padding: 110px 78px 0;
     height: 538px;
+    /* object-fit: contain; */
 }
 #light-pink {
     background-color: rgba(167, 33, 98, 0.15);
@@ -128,7 +129,8 @@ header {
         padding: 20px;
     }
     .banner-section,
-    .flowers-box {
+    .flowers-box,
+    .our-services {
         flex-direction: column;
         gap: 20px;
         text-align: center;
@@ -143,6 +145,9 @@ header {
     .flowers-card img {
         width: 100%;
     }
+    .our-services {
+        gap: 30px;
+    }
 }
 
 /* resoponsive for medium device min-width 576 to max-width 992px */
@@ -151,7 +156,8 @@ header {
         padding: 20px;
     }
     .banner-section,
-    .flowers-box {
+    .flowers-box,
+    .our-services {
         flex-direction: column;
         gap: 25px;
         text-align: center;
@@ -159,6 +165,9 @@ header {
     .banner-content {
         margin: 0 auto;
         text-align: center;
+    }
+    .our-services {
+        gap: 40px;
     }
 }
 
