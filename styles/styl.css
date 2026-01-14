@@ -89,7 +89,10 @@ header {
     border-top-right-radius: 100%;
     padding: 110px 78px 0;
     height: 538px;
-    /* object-fit: contain; */
+    transition: transform 0.3s ease;
+}
+.flowers-card img:hover {
+    transform: scale(1.2);
 }
 #light-pink {
     background-color: rgba(167, 33, 98, 0.15);
@@ -115,6 +118,12 @@ header {
     background-color: rgba(39, 39, 39, 0.05);
     padding: 86px 0;
     text-align: center;
+}
+.our-services img {
+transition: transform 0.3s ease;
+}
+.our-services img:hover{
+    transform: scale(1.5);
 }
 .service-description {
     color: rgba(39, 39, 39, 0.6);
@@ -142,7 +151,12 @@ header {
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 24px;
-
+}
+.gallery img {
+    transition: transform 0.3s ease;
+}
+.gallery img:hover {
+    transform: scale(1.2);
 }
 /* subscription related style  */
 .subscribe-section {
