@@ -81,16 +81,13 @@ header {
     gap: 24px;
     align-items: center;
 }
-.flowers-card {
-    width: 464px;
-    text-align: center;
-}
 .flowers-card img {
+    max-width: 464px;
+    width: 100%;
     margin-top: 48px;
     border-top-left-radius: 100%;
     border-top-right-radius: 100%;
     padding: 110px 78px 0;
-    max-width: 464px;
     height: 538px;
 }
 #light-pink {
@@ -113,13 +110,21 @@ header {
     header {
         padding: 20px;
     }
-    .banner-section {
+    .banner-section,
+    .flowers-box {
         flex-direction: column;
         gap: 20px;
         text-align: center;
     }
     .banner-content {
         text-align: center;
+    }
+    .our-flowers {
+        padding: 20px;
+        margin-top: 100px;
+    }
+    .flowers-card img {
+        width: 100%;
     }
 }
 
@@ -128,7 +133,8 @@ header {
     header {
         padding: 20px;
     }
-    .banner-section {
+    .banner-section,
+    .flowers-box {
         flex-direction: column;
         gap: 25px;
         text-align: center;
@@ -151,5 +157,8 @@ header {
     .banner-content {
         margin: 0 auto;
         text-align: center;
+    }
+    .flowers-box {
+        flex-direction: column;
     }
     }
